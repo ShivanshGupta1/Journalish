@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journalish</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+   
+    <link rel="stylesheet" href="materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="public/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="public/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="style.scss" type="text/scss" rel="stylesheet" media="screen,projection"/>
+    <style type="text/css">
+        .m20_0{ margin:20px 0px;}
+       .parallax {
+  
+  background-image: url("https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGpvdXJuYWx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" );
+
+  min-height: 1000px; 
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html, body {
+    height: 100%;
+}
+
+  .pin-top {
+    position: relative;
+  }
+
+
+  .pin-bottom {
+    position: relative;
+  }
+
+ 
+  .pinned {
+    position: fixed !important;
+  }
+  
+  .block {
+      height: 100%;
+  }
+  
+  .divider {
+      height: 50px;
+  }
+  #green {
+    background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+  }
+  #blue{
+    background: hsla(217, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+  }
+  #red{
+    background: hsla(333, 100%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0F7B", endColorstr="#F89B29", GradientType=1 );
+  }
+  h1{
+    font-size: 100px;
+    color: hsl(17, 77%, 51%);
+    text-shadow: 5px 5px gray;
+
+}
+h5{
+    color: #E34234;
+} .jumbotron{
+
+  height: 600px;
+    border-radius: 26% 74% 0% 100% / 0% 0% 100% 100%;
+   
+    background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+}
+h6{
+
+  color: #595cff;
+  text-shadow: 2px 2px gray;
+}
+
+    </style>
+</head>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="public/materialize.js"></script>
+  <script src="public/init.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</html>
+
+<body style="z-index: -1;">
+ 
+
+   <span class="animate__animated animate__zoomInDown" style="    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: -100%;
+    position: fixed;
+    background: #2c3e50;
+    -webkit-transform: scale(2) skew(-10deg);
+    transform: scale(2) skew(-10deg);
+    z-index: -1;
+    transition: .3s all ease-in-out;"></span>
+      
+  <div id="blue" class="block blue">
+    <nav class="pushpin-demo-nav pinned"  data-target="blue" style="top: 0px;" class="blue">
+
+      <nav>
+ 
+        <div class="nav-wrapper" style="background-color: lightblue;">
+      
+          <ul class="right hide-on-med-and-down">
+            <li><a href="http://localhost:3000/"><i class="material-icons"><img style="width:auto; height:75px;" src="https://www.brandbucket.com/sites/default/files/logo_uploads/41475/journalish.png" alt=""></i></a></li>
+            <li><a href="http://localhost:3000/write-a-blog"><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+          </ul>
+      
+          <div class="brand-logo" style="background-color: lightblue;; width: 100px;height: 50px;"></div>
+          <a href="#" data-target="mobile-demo" data-activates="slide-out"  class="button-collapse show-on-medium-and-up" ><i class="material-icons">menu</i></a>
+       
+        </div>
+      </nav>
+    
+      <ul class="sidenav" style="z-index: +2;" id="slide-out"  id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      
+      <script type="text/javascript">
+        $(".button-collapse").sideNav();
+      </script>
+    </nav> 
+  
+    <h1 style="text-align: center;">Journalish</h1>
+    <h5 style="text-align: center;">The future of Journalism!</h5>
+    <h6 style="margin-left: 250px;">One Project By Me!</h6>
+           <!-- Copy and Paste Me -->
+<div class="glitch-embed-wrap" style=" width:50%;
+margin-right:2%;
+float: left; height: 500px;">
+  <iframe
+    src="https://glitch.com/embed/#!/embed/covid-cases-tracker?path=index.js&previewSize=100"
+    title="covid-cases-tracker on Glitch"
+    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>   
+    <div class="carousel" style="left: -100px;   width:42%;
+    float: right; ">
+   
+      <a class="carousel-item" href="#one!" style="z-index: -2; opacity: 0.2; visibility: visible; transform: translateX(132px) translateY(100px) translateX(-400px) translateZ(-400px);">
+
+        <img style="width: 500px; height: auto;" src="https://images.unsplash.com/photo-1506784881475-0e408bbca849?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxzZWFyY2h8MXx8YnVsbGV0JTIwam91cm5hbHx8MHx8fA&ixlib=rb-1.2.1&q=80&w=1080">
+  
+      </a>
+      <a class="carousel-item" href="#two!" style="transform: translateX(132px) translateY(100px) translateX(-200px) translateZ(-200px); z-index: -1; opacity: 0.6; visibility: visible;">
+        <img style="width: 500px; height: auto;"  src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8am91cm5hbCUyMHdyaXRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80">
+      </a>
+      <a class="carousel-item active" href="#three!" style="transform: translateX(132px) translateY(100px) translateX(0px) translateX(0px) translateZ(0px); z-index: 0; opacity: 1; visibility: visible;">
+        <img style="width: 500px; height: auto;" src="https://images.unsplash.com/photo-1526280760714-f9e8b26f318f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8am91cm5hbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
+      </a>
+      <a class="carousel-item" href="#four!" style="transform: translateX(132px) translateY(100px) translateX(200px) translateZ(-200px); z-index: -1; opacity: 0.6; visibility: visible;">
+        <img  style="width: 500px; height: auto;"src="https://images.unsplash.com/photo-1519327232521-1ea2c736d34d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8am91cm5hbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
+      </a>
+      <a class="carousel-item" href="#five!" style="transform: translateX(132px) translateY(100px) translateX(400px) translateZ(-400px); z-index: -2; opacity: 0.2; visibility: visible;">
+        <img style="width: 500px; height: auto;"src="https://images.unsplash.com/photo-1522794338816-ee3a17a00ae8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGpvdXJuYWx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80">
+      </a>
+    </div>
+ 
+    <script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+    </script>
+          
+
+
+  </div>
+
+    <div class="divider"></div>
+
+
+ 
+  <div id="red" class="block red lighten-1">
+    <nav class="pushpin-demo-nav pin-top" data-target="red" style="top: 0px;">
+      <div class="nav-wrapper red">
+        <div class="container">
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons"><img style="width:auto; height:75px;" src="https://www.brandbucket.com/sites/default/files/logo_uploads/41475/journalish.png" alt=""></i></a></li>
+            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <!-- Copy and Paste Me -->
+   <h6  style="margin-left: 250px;">One more project of mine!</h6>
+     <h6  style="margin-left: 250px;">And if you want to write a blog</h6>
+     <h6  style="margin-left: 250px;">in another language! Use me</h6>
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%; margin-right:2%;
+float: left;">
+  <iframe
+    src="https://glitch.com/embed/#!/embed/transalatify?path=views/index.ejs&previewSize=100"
+    title="transalatify on Glitch"
+    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+    style="height: 500px; width: 500px; border: 0; margin-left: 100px; margin-top: 10px;">
+  </iframe>
+</div>
+
+<div class="card" style="left: -100px;   width:42%;
+float: right; top: -300px;">
+  <div class="card-content">
+    <p>This is a space where you can write blogs, poems, short stories, or any other artictisc way to show and display the magc of literature through words alone! Use this space to write in any language you prefer!, Use our personal translator, in case you need any help!</p>
+    <h6 style="color: #aefb2a; text-shadow: none;">3 Rules to follow at Journalish!</h6>
+  </div>
+  <div class="card-tabs">
+    <ul class="tabs tabs-fixed-width">
+      <li class="tab"><a href="#test4">No Cuss Words</a></li>
+      <li class="tab"><a class="active" href="#test5">No Word Limits</a></li>
+      <li class="tab"><a href="#test6">Have Fun!</a></li>
+    </ul>
+  </div>
+  <div class="card-content grey lighten-4">
+    <div id="test4">Writing your feelings does not mean to harm literature! Use the immese set of vocabulary you have gifted inside you, to find bettter words to describe your emotions! Cuss words may seem nice, but can hurt other gravely.</div>
+    <div id="test5">You can write as much as you want, as long as it follows all our rules! You can write whatever you want, from astronomy, to astrology!</div>
+    <div id="test6">Try to have fun while writing! Don't think too much on what others think. Write what you love, what you enjoy and what you are passionate about! Become a journalist! Join Journalish! </div>
+  </div>
+</div>
+  </div>
+  <div id="green" class="block green lighten-1" >
+    <nav class="pushpin-demo-nav pin-top" data-target="green" style="top: 0px;">
+      <div class="nav-wrapper green">
+        <div class="container">
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons"><img style="width:auto; height:75px;" src="https://www.brandbucket.com/sites/default/files/logo_uploads/41475/journalish.png" alt=""></i></a></li>
+            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <ul class="collapsible popout"style="background-color: white; width:50%; margin-left:330px; margin-top:100px;"  >
+      <li>
+        <div style="background-color: white;" class="collapsible-header"><i style="background-color: white;" class="material-icons">filter_drama</i>What is Journalism</div>
+        <div class="collapsible-body" style="background-color: white;"><span>Journalism is the production and distribution of reports on current events based on facts and supported with proof or evidence. The word journalism applies to the occupation, as well as citizen journalists who gather and publish information based on facts and supported with proof or evidence.</span></div>
+      </li>
+      <li>
+        <div style="background-color: white;" class="collapsible-header"><i style="background-color: white;" class="material-icons">place</i>Why is Journalism Important</div>
+        <div class="collapsible-body" style="background-color: white;"><span>The purpose and importance of journalism is to inform society with the information they need to live their lives. Without journalism, the world would be ignorant. Journalism is important because it gives current and relevant information and news to the public</span></div>
+      </li>
+      <li>
+        <div style="background-color: white;" class="collapsible-header" ><i style="background-color: white;" class="material-icons">whatshot</i>Why is it good for us?</div>
+        <div class="collapsible-body" style="background-color: white;"><span>It's simply writing down your thoughts and feelings to understand them more clearly. And if you struggle with stress, depression, or anxiety, keeping a journal is a great idea. It can help you gain control of your emotions and improve your mental health</span></div>
+      </li>
+    </ul>
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="margin-left: 600px;">Learn More</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h3 class="header">Journalish</h3>
+      <h3 class="header" style="font-size:medium; margin-left:5px">Join Journalish!</h3>
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <img src="https://c0.wallpaperflare.com/preview/639/306/330/aerial-background-blog-cafe.jpg" alt="" class="circle">
+          <span class="title">Journalism</span>
+          <p>New Blogs
+            <br> Every Week
+          </p>
+          <a href="#!" class="secondary-content">
+            <i class="material-icons">grade</i>
+          </a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle">folder</i>
+          <span class="title">Storage</span>
+          <p>Everything is Stored
+            <br> So, you never lose your data!
+          </p>
+          <a href="#!" class="secondary-content">
+            <i class="material-icons">grade</i>
+          </a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle green">assessment</i>
+          <span class="title">Analytics</span>
+          <p>For us to grow, we need your analysis!
+            <br> Fill our form and give you something to improve
+          </p>
+          <a href="#!" class="secondary-content">
+            <i class="material-icons">grade</i>
+          </a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">play_arrow</i>
+          <span class="title">Videos</span>
+          <p>For our premium package, we will be added an option to upload videos too!
+            <br> Where you can share your learning with anyone anytime!
+          </p>
+          <a href="#!" class="secondary-content">
+            <i class="material-icons">grade</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+          
+  <script>
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  </script>
+  </div>
+   
+ 
+    <div class="m20_0 ">
+
+      <div class="fixed-action-btn waves-orange" style="bottom: 45px; right: 24px; "> 
+          <a id="menu"  onclick="$('.tap-target').tapTarget('open')" class="btn btn-floating btn-large waves-orange 
+          "><i class="material-icons">menu</i></a> 
+     </div> 
+   
+
+    <div style="background-color: #00ff87;"  class="tap-target " data-activates="menu"> 
+      <div class="tap-target-content white-text"> 
+          <h5 style="text-align: center;">Huge Basket</h5>
+          <p>This initiavtive is made by a 12 year old kid (me), I created this website too! This is one of the many initiaives that I am trying to take to complete the SDG's (Sustainable Development Goals) 2030! My first initiative was to Increase <a href="https://genderequality.netlify.app/">Gender Equality</a>. </p>
+        </div>
+      </div>
+
+    </div>
+    </div> 
+</body> 
